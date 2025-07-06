@@ -5,17 +5,17 @@ function Portfolio() {
     {
       title: 'Startup Community Platform',
       description: 'Built a community growth platform for a Lagos-based startup.',
-      image: '/src/assets/project1.jpg',
+      image: '/src/assets/start-up.jpg',
     },
     {
       title: 'E-Commerce Website',
       description: 'Developed a responsive e-commerce site for a global client.',
-      image: '/src/assets/project2.jpg',
+      image: '/src/assets/build-website.jpg',
     },
     {
       title: 'Social Media Campaign',
       description: 'Created a branding strategy for a tech founder’s social media presence.',
-      image: '/src/assets/project3.jpg',
+      image: '/src/assets/social-media.jpg',
     },
   ];
 
