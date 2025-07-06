@@ -1,21 +1,24 @@
 import ProjectCard from '../components/ProjectCard';
+import startupImg from '../assets/start-up.jpg';
+import buildWebsiteImg from '../assets/build-website.jpg';
+import socialMediaImg from '../assets/social-media.jpg';
 
 function Portfolio() {
   const projects = [
     {
       title: 'Startup Community Platform',
       description: 'Built a community growth platform for a Lagos-based startup.',
-      image: '/src/assets/start-up.jpg',
+      image: startupImg
     },
     {
       title: 'E-Commerce Website',
       description: 'Developed a responsive e-commerce site for a global client.',
-      image: '/src/assets/build-website.jpg',
+      image: buildWebsiteImg
     },
     {
       title: 'Social Media Campaign',
       description: 'Created a branding strategy for a tech founder’s social media presence.',
-      image: '/src/assets/social-media.jpg',
+      image: socialMediaImg
     },
   ];
 
