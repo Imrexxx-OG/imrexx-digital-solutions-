@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 function Home() {
   return (
     <main className="fade-in">
@@ -6,7 +9,8 @@ function Home() {
           <div style={overlayStyle}>
             <h1>Innovative Tech Solutions for a Web3 World</h1>
             <p>Imrexx Digital Solutions delivers cutting-edge content creation, software development, and growth strategies for tech startups and founders.</p>
-            <a href="/contact" className="btn">Get Started</a>
+            {/* <a href="/contact" className="btn">Get Started</a> */}
+            <Link to="/contact" className="btn">Get Started</Link>
           </div>
           {/* [Image Placeholder: Hero background image, e.g., Web3-themed graphic from Pinterest] */}
         </div>

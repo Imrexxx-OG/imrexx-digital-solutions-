@@ -2,6 +2,7 @@ import ProjectCard from '../components/ProjectCard';
 import startupImg from '../assets/start-up.jpg';
 import buildWebsiteImg from '../assets/build-website.jpg';
 import socialMediaImg from '../assets/social-media.jpg';
+import { Link } from 'react-router-dom';
 
 function Portfolio() {
   const projects = [
@@ -32,7 +33,8 @@ function Portfolio() {
               <ProjectCard key={index} {...project} />
             ))}
           </div>
-          <a href="/contact" className="btn">See More Projects</a>
+          {/* <a href="/contact" className="btn">See More Projects</a> */}
+          <Link to="/contact" className="btn">See More Projects</Link>
         </div>
       </section>
     </main>

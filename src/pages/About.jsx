@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <main className="fade-in">
@@ -7,7 +9,7 @@ function About() {
           <p>We are a CAC-registered tech company specializing in innovative solutions for startups and founders. Our mission is to drive success through trust, expertise, and creativity.</p>
           <p>With a focus on Web3 technologies, we offer tailored services to help your business thrive in the digital age.</p>
           <img src="/team.jpg" style={teamStyle} alt="team picture" />
-          <a href="/contact" className="btn">Work With Us</a>
+          <Link href="/contact" className="btn">Work With Us</Link>
         </div>
       </section>
     </main>

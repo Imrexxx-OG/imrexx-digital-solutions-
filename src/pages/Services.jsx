@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Services() {
   return (
     <main className="fade-in">
@@ -22,7 +24,7 @@ function Services() {
               <p>Creative branding solutions for founders and projects to stand out online.</p>
             </div>
           </div>
-          <a href="/contact" className="btn">Get a Quote</a>
+          <Link href="/contact" className="btn">Get a Quote</Link>
         </div>
       </section>
     </main>
