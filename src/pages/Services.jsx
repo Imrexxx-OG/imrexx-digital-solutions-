@@ -24,7 +24,7 @@ function Services() {
               <p>Creative branding solutions for founders and projects to stand out online.</p>
             </div>
           </div>
-          <Link href="/contact" className="btn">Get a Quote</Link>
+          <Link to="/contact" className="btn">Get a Quote</Link>
         </div>
       </section>
     </main>
