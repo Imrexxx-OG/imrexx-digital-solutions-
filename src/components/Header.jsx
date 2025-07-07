@@ -1,17 +1,70 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <header className="header" style={headerStyle}>
       <div className="container">
         <div style={navStyle}>
           <img src="/imrexx.JPG" alt="Imrexx Digital Solutions Logo" style={logoStyle} />
-          <nav>
-            <NavLink to="/" style={navLinkStyle} activeStyle={activeNavLinkStyle}>Home</NavLink>
-            <NavLink to="/about" style={navLinkStyle} activeStyle={activeNavLinkStyle}>About</NavLink>
-            <NavLink to="/services" style={navLinkStyle} activeStyle={activeNavLinkStyle}>Services</NavLink>
-            <NavLink to="/portfolio" style={navLinkStyle} activeStyle={activeNavLinkStyle}>Portfolio</NavLink>
-            <NavLink to="/contact" style={navLinkStyle} activeStyle={activeNavLinkStyle}>Contact</NavLink>
+          <button className="hamburger" onClick={toggleMenu} style={hamburgerStyle}>
+            ☰
+          </button>
+          <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+            <NavLink
+              to="/"
+              style={({ isActive }) => ({
+                ...navLinkStyle,
+                color: isActive ? '#00d1b2' : '#fff',
+              })}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => ({
+                ...navLinkStyle,
+                color: isActive ? '#00d1b2' : '#fff',
+              })}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/services"
+              style={({ isActive }) => ({
+                ...navLinkStyle,
+                color: isActive ? '#00d1b2' : '#fff',
+              })}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Services
+            </NavLink>
+            <NavLink
+              to="/portfolio"
+              style={({ isActive }) => ({
+                ...navLinkStyle,
+                color: isActive ? '#00d1b2' : '#fff',
+              })}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Portfolio
+            </NavLink>
+            <NavLink
+              to="/contact"
+              style={({ isActive }) => ({
+                ...navLinkStyle,
+                color: isActive ? '#00d1b2' : '#fff',
+              })}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </NavLink>
           </nav>
         </div>
       </div>
@@ -33,24 +86,28 @@ const navStyle = {
   alignItems: 'center',
 };
 
+const logoStyle = {
+  height: '50px',
+  width: 'auto',
+  maxWidth: '200px',
+  objectFit: 'contain',
+};
+
 const navLinkStyle = {
   color: '#fff',
   textDecoration: 'none',
   marginLeft: '2rem',
   fontSize: '1.1rem',
-  transition: 'color 0.3s ease',
+  transition: 'color 0.3s ease, border-bottom 0.3s ease',
 };
 
-
-const logoStyle = {
-  height: '50px', // Adjust based on your logo size
-  width: 'auto',
-  maxWidth: '200px', // Prevent oversized logos
-  objectFit: 'contain', // Maintain aspect ratio
-};
-
-const activeNavLinkStyle = {
-  color: '#00d1b2',
+const hamburgerStyle = {
+  display: 'none', // Hidden on desktop
+  background: 'none',
+  border: 'none',
+  color: '#fff',
+  fontSize: '1.5rem',
+  cursor: 'pointer',
 };
 
 export default Header;

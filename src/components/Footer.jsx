@@ -3,7 +3,7 @@ function Footer() {
     <footer style={footerStyle}>
       <div className="container">
         <p>&copy; 2025 Imrexx Digital Solutions. All rights reserved.</p>
-        <p>CAC: [Your CAC Number] | TIN: [Your TIN] | SCUML: [Your SCUML Number]</p>
+        <p>Solving Your Digital Headaches, One Solution at a Time.</p>
       </div>
     </footer>
   );
