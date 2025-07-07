@@ -3,9 +3,11 @@ function Home() {
     <main className="fade-in">
       <section style={heroStyle}>
         <div className="container">
-          <h1>Innovative Tech Solutions for a Web3 World</h1>
-          <p>Imrexx Digital Solutions delivers cutting-edge content creation, software development, and growth strategies for tech startups and founders.</p>
-          <a href="/contact" className="btn">Get Started</a>
+          <div style={overlayStyle}>
+            <h1>Innovative Tech Solutions for a Web3 World</h1>
+            <p>Imrexx Digital Solutions delivers cutting-edge content creation, software development, and growth strategies for tech startups and founders.</p>
+            <a href="/contact" className="btn">Get Started</a>
+          </div>
           {/* [Image Placeholder: Hero background image, e.g., Web3-themed graphic from Pinterest] */}
         </div>
       </section>
@@ -36,6 +38,7 @@ const heroStyle = {
   background: 'url(/hero-bg.jpg) no-repeat center/cover',
   padding: '5rem 0',
   textAlign: 'center',
+  textShadow: '0 3px 6px rgba(0, 0, 0, 0.5)',
 };
 
 const sectionStyle = {
@@ -59,6 +62,12 @@ const testimonialsStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
   gap: '2rem',
+};
+
+const overlayStyle = {
+  backgroundColor: 'rgba(0, 0, 0, 0.6)',
+  padding: '2rem',
+  borderRadius: '8px',
 };
 
 export default Home;

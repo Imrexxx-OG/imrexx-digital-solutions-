@@ -5,7 +5,7 @@ function Header() {
     <header className="header" style={headerStyle}>
       <div className="container">
         <div style={navStyle}>
-          <h1>Imrexx Digital Solutions</h1>
+          <img src="/imrexx.JPG" alt="Imrexx Digital Solutions Logo" style={logoStyle} />
           <nav>
             <NavLink to="/" style={navLinkStyle} activeStyle={activeNavLinkStyle}>Home</NavLink>
             <NavLink to="/about" style={navLinkStyle} activeStyle={activeNavLinkStyle}>About</NavLink>
@@ -39,6 +39,14 @@ const navLinkStyle = {
   marginLeft: '2rem',
   fontSize: '1.1rem',
   transition: 'color 0.3s ease',
+};
+
+
+const logoStyle = {
+  height: '50px', // Adjust based on your logo size
+  width: 'auto',
+  maxWidth: '200px', // Prevent oversized logos
+  objectFit: 'contain', // Maintain aspect ratio
 };
 
 const activeNavLinkStyle = {

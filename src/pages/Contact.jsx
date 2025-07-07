@@ -13,7 +13,7 @@ function Contact() {
           </form>
           <p>Email: info@imrexxdigitalsolutions.ng</p>
           <p>Phone: [+234 8028062682]</p>
-          <p>Phone: [+234 8177241311]</p>
+          <p>Address: Abuja, Nigeria</p>
         </div>
       </section>
     </main>
