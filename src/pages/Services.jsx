@@ -1,27 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Services() {
   return (
     <main className="fade-in">
       <section style={sectionStyle}>
         <div className="container">
-          <h1>Our Services</h1>
+          <h1 style={headerStyle}>Our Services</h1>
           <div style={servicesStyle}>
-            <div style={serviceItemStyle}>
+            <div className="service-item" style={serviceItemStyle}>
               <h3>Content Creation for Projects</h3>
-              <p>Engaging content that resonates with your audience and boosts project visibility.</p>
+              <p style={paragraphStyle}>Engaging content that resonates with your audience and boosts project visibility.</p>
             </div>
-            <div style={serviceItemStyle}>
+            <div className="service-item" style={serviceItemStyle}>
               <h3>Software Development</h3>
-              <p>Custom software and app solutions tailored to your business needs.</p>
+              <p style={paragraphStyle}>Custom software and app solutions tailored to your business needs.</p>
             </div>
-            <div style={serviceItemStyle}>
+            <div className="service-item" style={serviceItemStyle}>
               <h3>Community Growth Strategy</h3>
-              <p>Proven strategies to build and engage communities for tech startups.</p>
+              <p style={paragraphStyle}>Proven strategies to build and engage communities for tech startups.</p>
             </div>
-            <div style={serviceItemStyle}>
+            <div className="service-item" style={serviceItemStyle}>
               <h3>Social Media Branding</h3>
-              <p>Creative branding solutions for founders and projects to stand out online.</p>
+              <p style={paragraphStyle}>Creative branding solutions for founders and projects to stand out online.</p>
             </div>
           </div>
           <Link to="/contact" className="btn">Get a Quote</Link>
@@ -35,10 +35,21 @@ const sectionStyle = {
   padding: '3rem 0',
 };
 
+const headerStyle = {
+  fontWeight: '800', // Match Home/About
+  textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)', // Match Home/About
+};
+
+const paragraphStyle = {
+  fontFamily: 'Roboto Mono, monospace', // Match Home/About
+  fontWeight: '400',
+  lineHeight: '1.6',
+};
+
 const servicesStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-  gap: '2rem',
+  gap: '2.5rem', // Match Home
 };
 
 const serviceItemStyle = {
@@ -46,7 +57,7 @@ const serviceItemStyle = {
   padding: '1.5rem',
   borderRadius: '8px',
   textAlign: 'center',
-  transition: 'transform 0.3s ease',
+  transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Enhanced for hover
 };
 
 export default Services;

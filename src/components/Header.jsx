@@ -87,7 +87,7 @@ const navStyle = {
 };
 
 const logoStyle = {
-  height: '50px',
+  height: '40px',
   width: 'auto',
   maxWidth: '200px',
   objectFit: 'contain',

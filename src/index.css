@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -27,26 +29,46 @@ main {
   padding: 2rem;
 }
 
-h1, h2, h3 {
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2, h3 {
   font-weight: 700;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   background: #00d1b2;
-  color: #fff;
+  color: #f0f0f0; /* Off-white for better contrast */
   text-decoration: none;
   border-radius: 4px;
-  text-shadow: #0a0a23 Shadow 0 2px 4px;
   margin-top: 0.5rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600; /* Bolder text */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-  background: #00b89c;
+  background: #00e6c3;
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 209, 178, 0.3);
+}
+
+.btn:focus {
+  outline: 2px solid #00e6c3; /* Brighter outline for visibility */
+  outline-offset: 2px;
 }
 
 .fade-in {
@@ -54,19 +76,49 @@ h1, h2, h3 {
   animation: fadeIn 1s ease-in forwards;
 }
 
-
-
-
 @keyframes fadeIn {
   to { opacity: 1; }
+}
+
+@keyframes bgFade {
+  0%, 100% { background-size: 100% 100%; }
+  50% { background-size: 105% 105%; }
+}
+
+.feature-item:hover, .service-item:hover, .project-card:hover, .team-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 209, 178, 0.3);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 2px #00d1b2;
+  outline: none;
+}
+
+a[href^="mailto"], a[href^="tel"] {
+  color: #00d1b2;
+  text-decoration: none;
+}
+
+a[href^="mailto"]:hover, a[href^="tel"]:hover {
+  color: #00e6c3;
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
   }
+  h1 { font-size: 2rem; }
+  h2, h3 { font-size: 1.5rem; }
+  .btn { 
+    padding: 0.75rem 1.5rem;
+    font-weight: 600; /* Ensure bold text on mobile */
+  }
 }
-
 
 .nav-menu {
   display: flex;
@@ -78,20 +130,23 @@ h1, h2, h3 {
 
 .nav-menu a:hover {
   color: #00d1b2;
-  border-bottom: '2px solid #00d1b2';
+  border-bottom: 2px solid #00d1b2;
+}
+
+.hamburger {
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open {
+  transform: rotate(90deg);
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-
   .hamburger {
-    display: block !important; /* Show hamburger on mobile */
+    display: block !important;
   }
-
   .nav-menu {
-    display: none; /* Hide nav by default on mobile */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -100,14 +155,12 @@ h1, h2, h3 {
     background: rgba(0, 0, 0, 0.9);
     padding: 1rem;
   }
-
   .nav-menu.open {
-    display: flex; /* Show when toggled */
+    display: flex;
   }
-
   .nav-menu a {
     margin: 0.5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 }

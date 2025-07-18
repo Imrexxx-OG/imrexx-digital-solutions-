@@ -1,20 +1,18 @@
 import { Link } from 'react-router-dom';
 
-
 function Home() {
   return (
     <main className="fade-in">
       <section style={heroStyle}>
         <div className="container">
           <div style={overlayStyle}>
-            <h1>Innovative Tech Solutions for a Web3 World</h1>
-            <p>Imrexx Digital Solutions delivers cutting-edge content creation, software development, and growth strategies for tech startups and founders.</p>
-            {/* <a href="/contact" className="btn">Get Started</a> */}
+            <h1 style={heroTextStyle}>Innovative Tech Solutions for a Web3 World</h1>
+            <p style={heroParagraphStyle}>Imrexx Digital Solutions delivers cutting-edge content creation, software development, and growth strategies for tech startups and founders.</p>
             <Link to="/contact" className="btn">Get Started</Link>
+            {/* [Image Placeholder: Hero background image, e.g., Web3-themed graphic from Pinterest, compressed via tinypng.com] */}
           </div>
-          {/* [Image Placeholder: Hero background image, e.g., Web3-themed graphic from Pinterest] */}
         </div>
-      </section>
+        </section>
       <section style={sectionStyle}>
         <div className="container">
           <h2>Why Choose Us</h2>
@@ -39,10 +37,23 @@ function Home() {
 }
 
 const heroStyle = {
-  background: 'url(/hero-bg.jpg) no-repeat center/cover',
+  background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/hero-bg.jpg) no-repeat center/cover',
   padding: '5rem 0',
   textAlign: 'center',
-  textShadow: '0 3px 6px rgba(0, 0, 0, 0.5)',
+  animation: 'bgFade 5s ease-in-out infinite',
+};
+
+const heroTextStyle = {
+  fontWeight: '800',
+  textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)',
+  color: '#fff',
+};
+
+const heroParagraphStyle = {
+  fontWeight: '400', // Lighter for hierarchy
+  textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)',
+  color: '#fff',
+  fontFamily: 'Roboto Mono, monospace', // Match index.css
 };
 
 const sectionStyle = {
@@ -52,7 +63,7 @@ const sectionStyle = {
 const featuresStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-  gap: '2rem',
+  gap: '2.5rem',
 };
 
 const featureItemStyle = {
@@ -60,16 +71,17 @@ const featureItemStyle = {
   padding: '1.5rem',
   borderRadius: '8px',
   textAlign: 'center',
+  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
 };
 
 const testimonialsStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-  gap: '2rem',
+  gap: '2.5rem',
 };
 
 const overlayStyle = {
-  backgroundColor: 'rgba(0, 0, 0, 0.6)',
+  backgroundColor: 'rgba(0, 0, 0, 0.7)',
   padding: '2rem',
   borderRadius: '8px',
 };
