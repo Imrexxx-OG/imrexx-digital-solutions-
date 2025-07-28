@@ -53,7 +53,7 @@ function Contact() {
               <button type="submit" className="btn">Send Message</button>
             </form>
           )}
-          <p style={paragraphStyle}>Email: <a href="mailto:info@imrexxdigitalsolutions.ng" style={linkStyle}>info@imrexxdigitalsolutions.ng</a></p>
+          <p style={paragraphStyle}>Email: <a href="mailto:info@imrexxdigitalsolutions.com" style={linkStyle}>info@imrexxdigitalsolutions.com</a></p>
           <p style={paragraphStyle}>Phone: <a href="tel:+2348028062682" style={linkStyle}>+234 8028062682</a></p>
           <p style={paragraphStyle}>Address: Abuja, Nigeria</p>
         </div>
