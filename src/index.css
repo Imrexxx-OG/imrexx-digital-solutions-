@@ -51,6 +51,7 @@ p {
   display: inline-block;
   padding: 1rem 2rem;
   background: #00d1b2;
+  cursor: pointer;
   color: #f0f0f0; /* Off-white for better contrast */
   text-decoration: none;
   border-radius: 4px;
