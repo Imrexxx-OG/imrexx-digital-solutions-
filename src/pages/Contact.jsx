@@ -54,7 +54,7 @@ function Contact() {
             </form>
           )}
           {/* <p style={paragraphStyle}>Email: <a href="mailto:info@imrexxdigitalsolutions.com" style={linkStyle}>info@imrexxdigitalsolutions.com</a></p> */}
-          <p style={paragraphStyle}>Email: <a href="mailto:imrexxx93@gmail.com" style={linkStyle}>imrexxx93@gmail.com</a></p>
+          <p style={paragraphStyle}>Email: <a href="mailto:imrexxdigitalsolutions@gmail.com" style={linkStyle}>imrexxdigitalsolutions@gmail.com</a></p>
           <p style={paragraphStyle}>Phone: <a href="tel:+2348028062682" style={linkStyle}>+234 8028062682</a></p>
           <p style={paragraphStyle}>Address: Abuja, Nigeria</p>
         </div>
