@@ -1,39 +1,74 @@
-function ProjectCard({ title, description, image }) {
+function ProjectCard({ title, description, image, tag }) {
   return (
-    <div className="project-card" style={cardStyle}>
-      <img src={image} alt={title} style={imageStyle} loading="lazy" />
-      <h3 style={cardTitleStyle}>{title}</h3>
-      <p style={cardDescriptionStyle}>{description}</p>
+    <div className="project-card card" style={cardStyle}>
+      <div style={imageWrapStyle}>
+        <img src={image} alt={title} style={imageStyle} loading="lazy" />
+        {tag && <span style={tagStyle}>{tag}</span>}
+      </div>
+      <div style={bodyStyle}>
+        <h3 style={titleStyle}>{title}</h3>
+        <p style={descStyle}>{description}</p>
+      </div>
     </div>
   );
 }
 
 const cardStyle = {
-  background: 'rgba(255, 255, 255, 0.1)',
-  padding: '1.5rem',
-  borderRadius: '8px',
-  textAlign: 'center',
-  transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Enhanced for hover
+  background: 'var(--surface)',
+  border: '1px solid var(--border)',
+  borderRadius: 'var(--radius-lg)',
+  overflow: 'hidden',
+  transition: 'all 0.3s ease',
+  display: 'flex',
+  flexDirection: 'column',
+};
+
+const imageWrapStyle = {
+  position: 'relative',
+  overflow: 'hidden',
 };
 
 const imageStyle = {
   width: '100%',
-  height: '200px',
+  height: '210px',
   objectFit: 'cover',
-  borderRadius: '8px',
-  marginBottom: '1rem',
+  display: 'block',
+  transition: 'transform 0.4s ease',
 };
 
-const cardTitleStyle = {
-  fontWeight: '700',
-  fontSize: '1.3rem',
+const tagStyle = {
+  position: 'absolute',
+  top: '12px',
+  left: '12px',
+  background: 'rgba(0, 209, 178, 0.9)',
+  color: '#000',
+  fontFamily: 'var(--font-mono)',
+  fontSize: '0.7rem',
+  fontWeight: 700,
+  padding: '0.25rem 0.6rem',
+  borderRadius: '4px',
+  letterSpacing: '0.05em',
+};
+
+const bodyStyle = {
+  padding: '1.5rem',
+  flex: 1,
+};
+
+const titleStyle = {
+  fontFamily: 'var(--font-display)',
+  fontWeight: 700,
+  fontSize: '1.1rem',
+  color: 'var(--text)',
   marginBottom: '0.5rem',
 };
 
-const cardDescriptionStyle = {
-  fontFamily: 'Roboto Mono, monospace', // Match Home/About/Services
-  fontWeight: '400',
-  lineHeight: '1.6',
+const descStyle = {
+  fontFamily: 'var(--font-mono)',
+  fontSize: '0.85rem',
+  color: 'var(--text-muted)',
+  lineHeight: 1.7,
+  margin: 0,
 };
 
 export default ProjectCard;

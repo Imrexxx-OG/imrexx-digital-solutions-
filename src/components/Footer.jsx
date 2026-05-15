@@ -1,19 +1,154 @@
+import { NavLink } from 'react-router-dom';
+
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer style={footerStyle}>
-      <div className="container">
-        <p>&copy;2025 Imrexx Digital Solutions. All rights reserved.</p>
-        <p>Solving Your Digital Headaches, One Solution at a Time.</p>
+      <div style={{ borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <div style={footerGridStyle}>
+            {/* Brand */}
+            <div style={brandColStyle}>
+              <img src="/imrexx.JPG" alt="Imrexx" style={logoStyle} />
+              <p style={taglineStyle}>Solving Your Digital Headaches,<br />One Solution at a Time.</p>
+              <div style={socialStyle}>
+                <a
+                  href="https://twitter.com/Imrexx_dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={socialLinkStyle}
+                  aria-label="X / Twitter"
+                >
+                  𝕏
+                </a>
+              </div>
+            </div>
+
+            {/* Nav links */}
+            <div style={colStyle}>
+              <p style={colHeadStyle}>Navigation</p>
+              {[['/', 'Home'], ['/about', 'About'], ['/services', 'Services'], ['/portfolio', 'Portfolio'], ['/contact', 'Contact']].map(([to, label]) => (
+                <NavLink key={to} to={to} end={to === '/'} style={footLinkStyle}>
+                  {label}
+                </NavLink>
+              ))}
+            </div>
+
+            {/* Contact */}
+            <div style={colStyle}>
+              <p style={colHeadStyle}>Get in Touch</p>
+              <a href="mailto:imrexxdigitalsolutions@gmail.com" style={footLinkStyle}>
+                imrexxdigitalsolutions@gmail.com
+              </a>
+              <a href="tel:+2348028062682" style={footLinkStyle}>
+                +234 802 806 2682
+              </a>
+              <p style={{ ...footLinkStyle, color: 'var(--text-dim)', cursor: 'default' }}>
+                Abuja, Nigeria
+              </p>
+            </div>
+          </div>
+
+          <div style={bottomStyle}>
+            <p style={copyStyle}>© {year} Imrexx Digital Solutions. All rights reserved.</p>
+            <p style={copyStyle}>CAC Registered · Nigeria</p>
+          </div>
+        </div>
       </div>
     </footer>
   );
 }
 
 const footerStyle = {
-  background: '#0a0a23',
-  padding: '1rem 0',
-  textAlign: 'center',
-  fontSize: '0.9rem',
+  background: 'var(--bg-2)',
+  paddingTop: '0',
+  marginTop: '4rem',
+};
+
+const footerGridStyle = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+  gap: '3rem',
+  padding: '3rem 0 2rem',
+};
+
+const brandColStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem',
+};
+
+const logoStyle = {
+  height: '36px',
+  width: 'auto',
+  objectFit: 'contain',
+};
+
+const taglineStyle = {
+  fontSize: '0.82rem',
+  lineHeight: 1.6,
+  color: 'var(--text-dim)',
+};
+
+const socialStyle = {
+  display: 'flex',
+  gap: '0.75rem',
+};
+
+const socialLinkStyle = {
+  color: 'var(--text-muted)',
+  textDecoration: 'none',
+  fontSize: '1.1rem',
+  width: '36px',
+  height: '36px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  borderRadius: '8px',
+  border: '1px solid var(--border)',
+  transition: 'all 0.2s ease',
+};
+
+const colStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.6rem',
+};
+
+const colHeadStyle = {
+  fontFamily: 'var(--font-display)',
+  fontWeight: 700,
+  fontSize: '0.8rem',
+  color: 'var(--text)',
+  letterSpacing: '0.08em',
+  textTransform: 'uppercase',
+  marginBottom: '0.25rem',
+};
+
+const footLinkStyle = {
+  fontFamily: 'var(--font-mono)',
+  fontSize: '0.82rem',
+  color: 'var(--text-muted)',
+  textDecoration: 'none',
+  transition: 'color 0.2s ease',
+  display: 'block',
+};
+
+const bottomStyle = {
+  borderTop: '1px solid var(--border)',
+  padding: '1.5rem 0',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  flexWrap: 'wrap',
+  gap: '0.5rem',
+};
+
+const copyStyle = {
+  fontFamily: 'var(--font-mono)',
+  fontSize: '0.78rem',
+  color: 'var(--text-dim)',
 };
 
 export default Footer;
