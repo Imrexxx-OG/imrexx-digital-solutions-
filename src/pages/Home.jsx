@@ -76,7 +76,7 @@ function Home() {
             <span style={accentText}>Web3 World</span>
           </h1>
           <p style={heroSubStyle}>
-            Imrexx Digital Solutions delivers cutting-edge content creation,<br />
+            Imrexx Digital Solutions delivers cutting-edge content creation,
             software development, and growth strategies for tech founders.
           </p>
           <div style={ctaRowStyle}>
