@@ -10,7 +10,9 @@ function Footer() {
           <div style={footerGridStyle}>
             {/* Brand */}
             <div style={brandColStyle}>
-              <img src="/imrexx.JPG" alt="Imrexx" style={logoStyle} />
+              <NavLink to="/" style={logoTextStyle} onClick={() => setIsMenuOpen(false)}>
+                IMREXX <span style={{ color: 'var(--primary)', fontWeight: 400 }}>DS</span>
+              </NavLink>
               <p style={taglineStyle}>Solving Your Digital Headaches,<br />One Solution at a Time.</p>
               <div style={socialStyle}>
                 <a
