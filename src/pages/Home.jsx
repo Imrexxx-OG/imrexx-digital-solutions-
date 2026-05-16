@@ -3,11 +3,27 @@ import { Link } from 'react-router-dom';
 /* ── Testimonial data ── */
 const testimonials = [
   {
+    handle: '@digi_dargonne',
+    name: 'Dargonne',
+    avatar: '/digi_dargonne.jpg',    // Drop this image in your /public folder
+    quote:
+      'We built together for a hackathon. Fast with the dev work, good under pressure. Looking forward to working together again.',
+    link: 'https://x.com/digi_dargonne',
+  },
+  {
+    handle: '@Web3Niels',
+    name: 'Niels',
+    avatar: '/web3niels.jpg',   // Drop this image in your /public folder
+    quote:
+      'Solid content work. Understands the Web3 space and delivers without needing hand-holding. Would recommend.',
+    link: 'https://x.com/web3niels',
+  },
+  {
     handle: '@wydagoat',
     name: 'Kenny',
     avatar: '/wydagoat.jpg',    // Drop this image in your /public folder
     quote:
-      'I would recommend Imrexx to any founder looking for content and growth support in the space. He\'s been a great partner to work with.',
+      'I would recommend Imrexx to any founder looking to grow their community in the space. He\'s been a great partner to work with.',
     link: 'https://x.com/wydagoat',
   },
   {
@@ -17,22 +33,8 @@ const testimonials = [
     quote:
       'Been working with Imrexx on content for a while now. Quality is consistent and he gets the brief without much back and forth.',
     link: 'https://x.com/resmaliks',
-  },
-  {
-    handle: '@Web3Niels',
-    name: 'Niels',
-    avatar: '/web3niels.jpg',   // Drop this image in your /public folder
-    quote:
-      'Solid content work. Understands the Web3 space and delivers without needing hand-holding. Would recommend.',
-    link: 'https://x.com/web3niels',
-  },{
-    handle: '@digi_dargonne',
-    name: 'Dargonne',
-    avatar: '/digi_dargonne.jpg',    // Drop this image in your /public folder
-    quote:
-      'We built together for a hackathon. Fast with the dev work, good under pressure. Looking forward to working together again.',
-    link: 'https://x.com/digi_dargonne',
   }
+  
 ];
 
 /* ── Stats bar ── */
