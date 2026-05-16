@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Kenny',
     avatar: '/wydagoat.jpg',    // Drop this image in your /public folder
     quote:
-      'Imrexx helped grow our community from the ground up. Consistent, reliable and actually understands Web3 culture. would recommend to any founder looking for content and growth support in the space.',
+      'I would recommend Imrexx to any founder looking for content and growth support in the space. He\'s been a great partner to work with.',
     link: 'https://x.com/wydagoat',
   },
   {
