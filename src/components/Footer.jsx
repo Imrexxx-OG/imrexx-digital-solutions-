@@ -8,12 +8,13 @@ function Footer() {
       <div style={{ borderTop: '1px solid var(--border)' }}>
         <div className="container">
           <div style={footerGridStyle}>
+
             {/* Brand */}
             <div style={brandColStyle}>
-              <NavLink to="/" style={logoTextStyle} onClick={() => setIsMenuOpen(false)}>
+              <NavLink to="/" style={logoTextStyle}>
                 IMREXX <span style={{ color: 'var(--primary)', fontWeight: 400 }}>DS</span>
               </NavLink>
-              <p style={taglineStyle}>Solving Your Digital Headaches,<br />One Solution at a Time.</p>
+              <p style={taglineStyle}>We help ambitious founders ship faster<br />and grow louder.</p>
               <div style={socialStyle}>
                 <a
                   href="https://twitter.com/Imrexx_dev"
@@ -50,6 +51,7 @@ function Footer() {
                 Abuja, Nigeria
               </p>
             </div>
+
           </div>
 
           <div style={bottomStyle}>
@@ -81,10 +83,13 @@ const brandColStyle = {
   gap: '1rem',
 };
 
-const logoStyle = {
-  height: '36px',
-  width: 'auto',
-  objectFit: 'contain',
+const logoTextStyle = {
+  fontFamily: 'var(--font-display)',
+  fontWeight: 800,
+  fontSize: '1.3rem',
+  color: '#fff',
+  textDecoration: 'none',
+  letterSpacing: '-0.02em',
 };
 
 const taglineStyle = {
