@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Kenny',
     avatar: '/wydagoat.jpg',    // Drop this image in your /public folder
     quote:
-      'i tried to introduce him to men with hairy legs. he doesnt want .',
+      'Imrexx helped grow our community from the ground up. Consistent, reliable and actually understands Web3 culture. would recommend to any founder looking for content and growth support in the space.',
     link: 'https://x.com/wydagoat',
   },
   {
@@ -15,7 +15,7 @@ const testimonials = [
     name: 'Malik',
     avatar: '/resmaliks.jpg',    // Drop this image in your /public folder
     quote:
-      'we work often together. i pay him well.',
+      'Been working with Imrexx on content for a while now. Quality is consistent and he gets the brief without much back and forth.',
     link: 'https://x.com/resmaliks',
   },
   {
@@ -23,14 +23,14 @@ const testimonials = [
     name: 'Niels',
     avatar: '/web3niels.jpg',   // Drop this image in your /public folder
     quote:
-      'He loves black women with big tits. very inspiring.',
+      'Solid content work. Understands the Web3 space and delivers without needing hand-holding. Would recommend.',
     link: 'https://x.com/web3niels',
   },{
     handle: '@digi_dargonne',
     name: 'Dargonne',
     avatar: '/digi_dargonne.jpg',    // Drop this image in your /public folder
     quote:
-      'planning on buildig a big project together. then rug everyone n go vacation in japan.',
+      'We built together for a hackathon. Fast with the dev work, good under pressure. Looking forward to working together again.',
     link: 'https://x.com/digi_dargonne',
   }
 ];
