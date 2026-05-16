@@ -21,24 +21,17 @@ function Header() {
   return (
     <header style={{
       ...headerStyle,
-      background: scrolled
-        ? 'rgba(2, 2, 9, 0.92)'
-        : 'rgba(2, 2, 9, 0.7)',
-      borderBottom: scrolled
-        ? '1px solid var(--border)'
-        : '1px solid transparent',
+      background: scrolled ? 'rgba(2, 2, 9, 0.92)' : 'rgba(2, 2, 9, 0.7)',
+      borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
     }}>
       <div className="container">
         <div style={navWrapStyle}>
+
           {/* Logo */}
-          <NavLink to="/" style={logoWrapStyle} onClick={() => setIsMenuOpen(false)}>
-            <img
-              src="/imrexx.JPG"
-              alt="Imrexx Digital Solutions"
-              style={logoStyle}
-            />
+          <NavLink to="/" style={logoTextStyle} onClick={() => setIsMenuOpen(false)}>
+            IMREXX <span style={{ color: 'var(--primary)', fontWeight: 400 }}>DS</span>
           </NavLink>
 
           {/* Desktop nav */}
@@ -89,6 +82,7 @@ function Header() {
           >
             {isMenuOpen ? '✕' : '☰'}
           </button>
+
         </div>
       </div>
     </header>
@@ -109,18 +103,13 @@ const navWrapStyle = {
   alignItems: 'center',
 };
 
-const logoWrapStyle = {
-  display: 'flex',
-  alignItems: 'center',
+const logoTextStyle = {
+  fontFamily: 'var(--font-display)',
+  fontWeight: 800,
+  fontSize: '1.3rem',
+  color: '#fff',
   textDecoration: 'none',
-  flexShrink: 0,
-};
-
-const logoStyle = {
-  height: '38px',
-  width: 'auto',
-  maxWidth: '180px',
-  objectFit: 'contain',
+  letterSpacing: '-0.02em',
 };
 
 const hamburgerStyle = {
