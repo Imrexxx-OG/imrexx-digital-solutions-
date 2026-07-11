@@ -71,7 +71,7 @@ function Home() {
       {/* ── Hero ── */}
       <section style={heroSection}>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <p className="section-label">Abuja, Nigeria · Est. 2022</p>
+          <p className="section-label">Est. 2022</p>
           <h1 style={heroH1}>
             Innovative Tech<br />
             Solutions for a<br />
