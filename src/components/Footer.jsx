@@ -44,12 +44,12 @@ function Footer() {
               <a href="mailto:imrexxdigitalsolutions@gmail.com" style={footLinkStyle}>
                 imrexxdigitalsolutions@gmail.com
               </a>
-              {/* <a href="tel:+2348028062682" style={footLinkStyle}>
-                +234 802 806 2682
+              <a href="https://t.me/Imrexx93" style={footLinkStyle}>
+                Telegram: @Imrexx93
               </a>
-              <p style={{ ...footLinkStyle, color: 'var(--text-dim)', cursor: 'default' }}>
-                Abuja, Nigeria
-              </p> */}
+              <a href="https://discord.com/users/Imrexx93" style={footLinkStyle}>
+                Discord: @Imrexx93
+              </a>
             </div>
 
           </div>
