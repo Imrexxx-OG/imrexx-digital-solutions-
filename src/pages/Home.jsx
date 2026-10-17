@@ -55,7 +55,7 @@ const features = [
   {
     icon: '⚡',
     title: 'Expertise',
-    desc: 'Proven Web3 and software solutions for founders across Nigeria and globally.',
+    desc: 'Advanced software development and tech solutions for founders across Nigeria and globally.',
   },
   {
     icon: '🎯',
@@ -75,7 +75,7 @@ function Home() {
           <h1 style={heroH1}>
             Innovative Tech<br />
             Solutions for a<br />
-            <span style={accentText}>Web3 World</span>
+            <span style={accentText}>Connected World</span>
           </h1>
           <p style={heroSubStyle}>
             Imrexx Digital Solutions delivers cutting-edge content creation,

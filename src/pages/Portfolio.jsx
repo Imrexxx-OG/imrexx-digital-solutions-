@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Startup Community Platform',
     description:
-      'Took a Lagos Web3 startup from 0 to 5,000 community members in 90 days.',
+      'Took a Lagos tech startup from 0 to 5,000 community members in 90 days.',
     image: startupImg,
     tag: 'Community',
   },
