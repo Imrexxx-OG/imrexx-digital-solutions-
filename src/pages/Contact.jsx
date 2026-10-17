@@ -17,21 +17,15 @@ const contactItems = [
   },
   {
     icon: '💬',
+    label: 'WhatsApp',
+    value: '+2348028062682',
+    href: 'https://wa.me/2348028062682',
+  },
+  {
+    icon: '💬',
     label: 'Telegram',
     value: '@Imrexx93',
-    href: `https://t.me/Imrexx93`,
-  },
-  {
-    icon: '🎮',
-    label: 'Discord',
-    value: '@Imrexx93',
-    href: `https://discord.com/users/Imrexx93`,
-  },
-  {
-    icon: '𝕏',
-    label: 'X (Twitter)',
-    value: '@Imrexx_dev',
-    href: 'https://x.com/Imrexx_dev',
+    href: 'https://t.me/Imrexx93',
   },
 ];
 
