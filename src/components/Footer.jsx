@@ -102,10 +102,10 @@ const socialStyle = {
 const socialLinkStyle = {
   color: 'var(--text-muted)',
   textDecoration: 'none',
-  fontSize: '1.1rem',
-  width: '36px',
-  height: '36px',
-  display: 'flex',
+  fontSize: '0.82rem',               // Matches your other font sizes
+  fontFamily: 'var(--font-mono)',    // Matches standard link typography
+  padding: '0.5rem 1rem',            // Creates vertical and horizontal breathing room
+  display: 'inline-flex',            
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: '8px',
