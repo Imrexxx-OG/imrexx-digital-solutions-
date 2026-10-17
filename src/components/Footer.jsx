@@ -22,8 +22,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   style={socialLinkStyle}
                   aria-label="WhatsApp"
-                > WhatsApp
-                </a>
+                > WhatsApp: 08028062682 </a>
               </div>
             </div>
 
@@ -102,9 +101,9 @@ const socialStyle = {
 const socialLinkStyle = {
   color: 'var(--text-muted)',
   textDecoration: 'none',
-  fontSize: '0.82rem',               // Matches your other font sizes
-  fontFamily: 'var(--font-mono)',    // Matches standard link typography
-  padding: '0.5rem 1rem',            // Creates vertical and horizontal breathing room
+  fontSize: '0.82rem',               
+  fontFamily: 'var(--font-mono)',    
+  padding: '0.5rem 1rem',            
   display: 'inline-flex',            
   alignItems: 'center',
   justifyContent: 'center',
