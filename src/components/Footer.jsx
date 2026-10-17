@@ -23,7 +23,7 @@ function Footer() {
                   style={socialLinkStyle}
                   aria-label="WhatsApp"
                 >
-                  WhatsApp: +2348028062682
+                  <span style={{ fontSize: '1.2rem' }}>WhatsApp: +2348028062682</span>
                 </a>
               </div>
             </div>
