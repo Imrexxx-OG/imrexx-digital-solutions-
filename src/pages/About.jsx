@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 const values = [
   { icon: '🔒', title: 'Trust First', desc: 'CAC-registered and fully transparent. We show up, we deliver.' },
-  { icon: '🌍', title: 'Built in Africa', desc: 'Proudly Nigerian, serving clients globally in Web3 and beyond.' },
-  { icon: '⚡', title: 'Web3 Native', desc: 'We live and breathe decentralized tech, content, and communities.' },
+  { icon: '🌍', title: 'Built in Africa', desc: 'Proudly Nigerian, serving clients globally.' },
+  { icon: '⚡', title: 'Tech Driven', desc: 'We live and breathe the latest technology, engaging content, and connected communities.' },
 ];
 
 function About() {
@@ -19,7 +19,7 @@ function About() {
             <span style={{ color: 'var(--primary)' }}>That Gets Things Done</span>
           </h1>
           <p style={heroSubStyle}>
-            Imrexx Digital Solutions is a CAC-registered tech house headquartered in Abuja, Nigeria. We specialize in helping startups and Web3 founders globally ship high-performance products and grow active communities without the corporate nonsense.
+            Imrexx Digital Solutions is a CAC-registered tech house headquartered in Abuja, Nigeria. We specialize in helping startups and scaling founders globally ship high-performance products and grow active communities without the corporate nonsense.
           </p>
         </div>
       </section>
@@ -37,8 +37,7 @@ function About() {
           <div style={imageCapStyle}>
             <span style={imageCapBadgeStyle}>📍 Abuja, Nigeria</span>
             <p style={imageCapTextStyle}>
-              A tight-knit crew of developers, designers, and Web3 specialists
-              working across time zones to make your vision real.
+              A tight-knit crew of developers, designers, and tech innovators working across time zones to make your vision real.
             </p>
           </div>
         </div>
@@ -53,8 +52,7 @@ function About() {
               <h2>Built to Compete<br />Globally</h2>
               <p style={bodyTextStyle}>
                 We believe great technology shouldn't be gatekept behind bloated agencies
-                and six-figure retainers. Imrexx exists to give ambitious founders and the Web3 space access to the same quality
-                of work that global brands pay premium for.
+                and six-figure retainers. Imrexx exists to give ambitious founders and growing enterprises access to the same quality of work that global brands pay a premium for.
               </p>
               <p style={{ ...bodyTextStyle, marginTop: '1rem' }}>
                 With a focus on content creation, software development, and community
