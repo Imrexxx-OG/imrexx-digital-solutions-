@@ -17,13 +17,13 @@ function Footer() {
               <p style={taglineStyle}>We help ambitious founders ship faster<br />and grow louder.</p>
               <div style={socialStyle}>
                 <a
-                  href="https://twitter.com/Imrexx_dev"
+                  href="https://wa.me/2348028062682"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={socialLinkStyle}
-                  aria-label="X / Twitter"
+                  aria-label="WhatsApp"
                 >
-                  𝕏
+                  💬
                 </a>
               </div>
             </div>
@@ -46,9 +46,6 @@ function Footer() {
               </a>
               <a href="https://t.me/Imrexx93" style={footLinkStyle}>
                 Telegram: @Imrexx93
-              </a>
-              <a href="https://discord.com/users/Imrexx93" style={footLinkStyle}>
-                Discord: @Imrexx93
               </a>
             </div>
 

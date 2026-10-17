@@ -5,7 +5,7 @@ const services = [
     icon: '✍️',
     title: 'Content Creation',
     tag: 'Popular',
-    desc: 'Threads, long-form posts, newsletters, and scripts that drive engagement for Web3 projects and tech founders.',
+    desc: 'Articles, long-form posts, newsletters, and scripts that drive engagement for projects and tech founders.',
     points: ['Twitter/X thread strategy', 'Newsletter copywriting', 'Project announcements & whitepapers'],
   },
   {
