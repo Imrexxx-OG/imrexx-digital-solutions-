@@ -22,8 +22,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   style={socialLinkStyle}
                   aria-label="WhatsApp"
-                >
-                  <span style={{ fontSize: '1.2rem' }}>WhatsApp: +2348028062682</span>
+                > WhatsApp
                 </a>
               </div>
             </div>
